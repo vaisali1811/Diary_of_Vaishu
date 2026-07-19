@@ -300,7 +300,23 @@
     color:var(--ink-soft);
     font-family:'Kalam',cursive;
   }
+/* Diary Images */
+.diary-img{
+    display:block;
+    width:100%;
+    max-width:550px;
+    height:auto;
+    margin:18px auto;
+    border:4px solid #fff;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
 
+.diary-img:hover{
+    transform:scale(1.03);
+    box-shadow:0 12px 28px rgba(0,0,0,.25);
+}
   @media (max-width:640px){
     .margin-rule{ left:20px; }
     header.hero, nav.tabs, main{ padding-left:36px; }
@@ -330,6 +346,7 @@
   <section class="phase active" id="school">
     <div class="entry" data-tag="Angel Baby Land">
       <h3>Where I found my talent</h3>
+      <img src="School.jpeg" alt="School" class="diary-img">
       <p>I was happy about my talent here — I think I was one of the best students in the class, and I earned a lot of certificates. I always felt I had to prove myself to others, and I was very particular about being on time.</p>
       <ul>
         <li>Best student in class, several certificates</li>
@@ -350,6 +367,7 @@
   <section class="phase" id="ug">
     <div class="entry" data-tag="Day One">
       <h3>Walking in nervous</h3>
+      <img src="College.jpeg" alt="College" class="diary-img">
       <p>On my first day of college, I thought no one would like me. I was scared I'd make some mistake. Turns out I made a lot of friends — and one especially unforgettable day: my 18th birthday, the best birthday I've ever had. I owe them a sincere thank you.</p>
     </div>
 
