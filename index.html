@@ -476,7 +476,18 @@
   const commentForm = document.getElementById('commentForm');
   const commentList = document.getElementById('commentList');
   const emptyNote = document.getElementById('emptyNote');
+// Dummy comment (shown on page load)
+if (emptyNote) emptyNote.remove();
 
+const dummyCard = document.createElement('div');
+dummyCard.className = 'comment-card';
+dummyCard.innerHTML = `
+  <span class="author">Ganesh</span>
+  <span class="when">7/19/2026, 10:07:22 PM</span>
+  <p>Lucky to be a part in your Diary and Life ♡</p>
+`;
+
+commentList.appendChild(dummyCard);
   commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = document.getElementById('commentName').value.trim();
